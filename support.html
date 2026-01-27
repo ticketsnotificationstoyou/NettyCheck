@@ -32,14 +32,22 @@
         .app-icon {
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ffffff;
             border-radius: 26px;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 60px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+            border: 3px solid #f0f0f0;
+        }
+        
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
         
         h1 {
@@ -233,7 +241,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon">🛠️</div>
+            <div class="app-icon">
+                <img src="images/image-2.jpg" alt="NettyCheck Logo">
+            </div>
             <h1>NettyCheck</h1>
             <p class="subtitle">NetToolkit Pro</p>
             <p class="tagline">Professional Network Diagnostics & Connectivity Analysis</p>
