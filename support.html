@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NettyCheck Support - Professional Network Diagnostics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 26px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #6e6e73;
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 1.1em;
+            color: #86868b;
+            font-style: italic;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+        }
+        
+        h2 {
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        
+        .contact-icon {
+            font-size: 24px;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .contact-item a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .response-time {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f4fd;
+            border-left: 4px solid #007AFF;
+            border-radius: 8px;
+            color: #1d1d1f;
+        }
+        
+        .features {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        
+        .features li {
+            padding: 12px 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #34c759;
+        }
+        
+        .features li:before {
+            content: "✓";
+            color: #34c759;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .description {
+            color: #515154;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box strong {
+            color: #856404;
+        }
+        
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .use-case {
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            color: #2e7d32;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #6e6e73;
+            font-size: 0.95em;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        footer a {
+            color: #007AFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🛠️</div>
+            <h1>NettyCheck</h1>
+            <p class="subtitle">NetToolkit Pro</p>
+            <p class="tagline">Professional Network Diagnostics & Connectivity Analysis</p>
+        </div>
+        
+        <div class="section">
+            <h2>📧 Contact Support</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📬</span>
+                    <div>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:tunnelletter@gmail.com">tunnelletter@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <div>
+                        <strong>Telegram Support:</strong><br>
+                        <a href="https://web.telegram.org/k/#@nettychecksupport" target="_blank">@nettychecksupport</a>
+                    </div>
+                </div>
+            </div>
+            <div class="response-time">
+                <strong>⏱️ Response Time:</strong> We typically respond within 24 hours. For urgent issues, please include "URGENT" in your email subject.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 About NettyCheck</h2>
+            <p class="description">
+                NettyCheck – NetToolkit Pro is a professional-grade network diagnostics and connectivity analysis tool designed for IT specialists, developers, and network administrators who require accurate insight into network behavior, performance, and configuration.
+            </p>
+            <p class="description">
+                The application focuses on network visibility, diagnostics, and controlled connectivity testing, providing advanced tools for understanding how network connections are established, routed, and validated.
+            </p>
+            
+            <div class="highlight-box">
+                <strong>Professional Focus:</strong> All tools are designed for technical analysis and troubleshooting, not for consumer-grade anonymization or traffic masking.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔧 Professional Network Diagnostics</h2>
+            
+            <h3>Advanced Connectivity Testing</h3>
+            <ul class="features">
+                <li>Multi-protocol connectivity testing (TCP, UDP, HTTP/HTTPS)</li>
+                <li>Port reachability checks (including 22, 80, 443)</li>
+                <li>MTU discovery with automatic detection (400–1500 range)</li>
+                <li>End-to-end connection validation</li>
+                <li>Real-time latency and response time analysis</li>
+            </ul>
+            
+            <h3>Security & Network Inspection</h3>
+            <ul class="features">
+                <li>SSL/TLS certificate chain inspection</li>
+                <li>Protocol and cipher validation</li>
+                <li>HTTP request and response header analysis</li>
+                <li>DNS resolution diagnostics and visibility checks</li>
+                <li>IP routing and exposure analysis</li>
+            </ul>
+            
+            <h3>Network Intelligence Tools</h3>
+            <ul class="features">
+                <li>DNS lookup with reverse resolution</li>
+                <li>WHOIS domain information</li>
+                <li>Subnet and CIDR calculation with visual breakdown</li>
+                <li>Network interface analysis (lo0, en0, pdp_ip0, utun*)</li>
+            </ul>
+            
+            <h3>Performance Analysis</h3>
+            <ul class="features">
+                <li>Bandwidth and throughput testing</li>
+                <li>Active connection monitoring</li>
+                <li>Per-interface traffic statistics</li>
+                <li>Network stability and quality indicators</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🔐 Controlled Connection Sessions</h2>
+            <p class="description">
+                NettyCheck includes a client-side connectivity module that allows users to establish direct connections to infrastructure they own or manage.
+            </p>
+            <ul class="features">
+                <li>Client-initiated connections to user-configured endpoints</li>
+                <li>Support for multiple industry-standard connection methods</li>
+                <li>No shared servers, accounts, or third-party infrastructure</li>
+                <li>Designed for testing, validation, and diagnostics of private network setups</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>Important:</strong> NettyCheck does not provide public servers, shared networks, or managed services. All connection parameters are explicitly defined by the user.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>👥 Designed For</h2>
+            <div class="use-cases">
+                <div class="use-case">Network Engineers</div>
+                <div class="use-case">System Administrators</div>
+                <div class="use-case">Security Specialists</div>
+                <div class="use-case">Developers</div>
+                <div class="use-case">IT Consultants</div>
+                <div class="use-case">Advanced Users</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔒 Privacy By Design</h2>
+            <ul class="features">
+                <li>Zero data collection</li>
+                <li>No tracking or analytics</li>
+                <li>All processing occurs locally on the device</li>
+                <li>No user accounts or identifiers</li>
+                <li>No data is transmitted to us or stored externally</li>
+            </ul>
+            <p class="description" style="margin-top: 20px;">
+                <strong>NettyCheck is a local diagnostic tool.</strong> We do not observe, log, or process user traffic.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>❓ Frequently Asked Questions</h2>
+            
+            <h3>Q: How do I use the VPN feature?</h3>
+            <p class="description">
+                <strong>A:</strong> Open the app → Tap "Secure Tunnel" → Tap "Add Server" (+ button) → Configure your own VPN server settings. This feature is designed for connecting to infrastructure you own or manage.
+            </p>
+            
+            <h3>Q: Does NettyCheck provide VPN servers?</h3>
+            <p class="description">
+                <strong>A:</strong> No. NettyCheck is a diagnostic tool, not a VPN service. You must configure your own server endpoints. We do not provide public servers, shared networks, or managed services.
+            </p>
+            
+            <h3>Q: Is my data private?</h3>
+            <p class="description">
+                <strong>A:</strong> Yes! NettyCheck follows a strict privacy-first policy with no tracking and no logs. All processing occurs on your device. See our <a href="https://ticketsnotificationstoyou.github.io/NettyCheck/" style="color: #007AFF;">Privacy Policy</a>.
+            </p>
+            
+            <h3>Q: How can I support development?</h3>
+            <p class="description">
+                <strong>A:</strong> Tap the info button (ℹ️) in the Secure Tunnel screen → Tap "Support the Project" to access in-app tips.
+            </p>
+            
+            <h3>Q: Who is NettyCheck for?</h3>
+            <p class="description">
+                <strong>A:</strong> NettyCheck is designed for IT professionals, network engineers, developers, and advanced users who need accurate network diagnostics and connectivity analysis tools.
+            </p>
+        </div>
+        
+        <footer>
+            <p><strong>© 2025 NettyCheck by Vladislav. All rights reserved.</strong></p>
+            <p style="margin-top: 15px;">
+                <a href="https://ticketsnotificationstoyou.github.io/NettyCheck/">Privacy Policy</a>
+                <a href="mailto:tunnelletter@gmail.com">Contact</a>
+                <a href="https://web.telegram.org/k/#@nettychecksupport" target="_blank">Telegram Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
