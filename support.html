@@ -181,6 +181,17 @@
             color: #2e7d32;
         }
         
+        .protocol-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #e3f2fd;
+            color: #1976d2;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+        }
+        
         footer {
             text-align: center;
             margin-top: 50px;
@@ -234,20 +245,20 @@
                 <div class="contact-item">
                     <span class="contact-icon">📬</span>
                     <div>
-                        <strong>Email:</strong><br>
+                        <strong>Email Support:</strong><br>
                         <a href="mailto:tunnelletter@gmail.com">tunnelletter@gmail.com</a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">💬</span>
                     <div>
-                        <strong>Telegram Support:</strong><br>
+                        <strong>Telegram Support Channel:</strong><br>
                         <a href="https://web.telegram.org/k/#@nettychecksupport" target="_blank">@nettychecksupport</a>
                     </div>
                 </div>
             </div>
             <div class="response-time">
-                <strong>⏱️ Response Time:</strong> We typically respond within 24 hours. For urgent issues, please include "URGENT" in your email subject.
+                <strong>⏱️ Response Time:</strong> We typically respond within 24 hours. For urgent technical issues, please include "URGENT" in your email subject line.
             </div>
         </div>
         
@@ -257,120 +268,170 @@
                 NettyCheck – NetToolkit Pro is a professional-grade network diagnostics and connectivity analysis tool designed for IT specialists, developers, and network administrators who require accurate insight into network behavior, performance, and configuration.
             </p>
             <p class="description">
-                The application focuses on network visibility, diagnostics, and controlled connectivity testing, providing advanced tools for understanding how network connections are established, routed, and validated.
+                The application focuses on network visibility, diagnostics, and controlled connectivity testing, providing advanced tools for understanding how network connections are established, routed, and validated in professional environments.
             </p>
             
             <div class="highlight-box">
-                <strong>Professional Focus:</strong> All tools are designed for technical analysis and troubleshooting, not for consumer-grade anonymization or traffic masking.
+                <strong>Professional Focus:</strong> All tools are designed for technical analysis and troubleshooting in enterprise and development environments. NettyCheck is not intended for consumer-grade anonymization or traffic masking.
             </div>
         </div>
         
         <div class="section">
-            <h2>🔧 Professional Network Diagnostics</h2>
+            <h2>🔧 Network Diagnostic Tools</h2>
             
-            <h3>Advanced Connectivity Testing</h3>
+            <h3>Connectivity Testing</h3>
             <ul class="features">
                 <li>Multi-protocol connectivity testing (TCP, UDP, HTTP/HTTPS)</li>
-                <li>Port reachability checks (including 22, 80, 443)</li>
-                <li>MTU discovery with automatic detection (400–1500 range)</li>
-                <li>End-to-end connection validation</li>
-                <li>Real-time latency and response time analysis</li>
+                <li>Port reachability checks and validation</li>
+                <li>MTU discovery with automatic detection (400–1500 byte range)</li>
+                <li>End-to-end connection validation and path analysis</li>
+                <li>Real-time latency and response time measurement</li>
             </ul>
             
-            <h3>Security & Network Inspection</h3>
+            <h3>Security & Inspection</h3>
             <ul class="features">
-                <li>SSL/TLS certificate chain inspection</li>
-                <li>Protocol and cipher validation</li>
-                <li>HTTP request and response header analysis</li>
-                <li>DNS resolution diagnostics and visibility checks</li>
-                <li>IP routing and exposure analysis</li>
+                <li>SSL/TLS certificate chain inspection and validation</li>
+                <li>Protocol and cipher suite analysis</li>
+                <li>HTTP request and response header examination</li>
+                <li>DNS resolution diagnostics and leak detection</li>
+                <li>IP routing and network exposure analysis</li>
             </ul>
             
-            <h3>Network Intelligence Tools</h3>
+            <h3>Network Intelligence</h3>
             <ul class="features">
-                <li>DNS lookup with reverse resolution</li>
-                <li>WHOIS domain information</li>
+                <li>DNS lookup with forward and reverse resolution</li>
+                <li>WHOIS domain registration information retrieval</li>
                 <li>Subnet and CIDR calculation with visual breakdown</li>
                 <li>Network interface analysis (lo0, en0, pdp_ip0, utun*)</li>
+                <li>Active connection monitoring and statistics</li>
             </ul>
             
             <h3>Performance Analysis</h3>
             <ul class="features">
-                <li>Bandwidth and throughput testing</li>
-                <li>Active connection monitoring</li>
+                <li>Bandwidth and throughput measurement</li>
                 <li>Per-interface traffic statistics</li>
                 <li>Network stability and quality indicators</li>
+                <li>Connection performance benchmarking</li>
             </ul>
         </div>
         
         <div class="section">
-            <h2>🔐 Controlled Connection Sessions</h2>
+            <h2>🔐 Secure Tunnel - Protocol Testing Module</h2>
             <p class="description">
-                NettyCheck includes a client-side connectivity module that allows users to establish direct connections to infrastructure they own or manage.
+                NettyCheck includes an advanced protocol testing module that enables network professionals to validate, diagnose, and analyze secure proxy protocol implementations. This feature is designed for testing user-managed infrastructure in controlled development and enterprise environments.
             </p>
+            
+            <h3>Supported Protocol Standards</h3>
+            <p class="description" style="margin-bottom: 15px;">
+                The module supports industry-standard secure proxy protocols commonly used in enterprise network testing:
+            </p>
+            <div style="margin-bottom: 20px;">
+                <span class="protocol-badge">Shadowsocks</span>
+                <span class="protocol-badge">VLESS</span>
+                <span class="protocol-badge">VMESS</span>
+                <span class="protocol-badge">Trojan</span>
+            </div>
+            
+            <h3>Technical Capabilities</h3>
             <ul class="features">
-                <li>Client-initiated connections to user-configured endpoints</li>
-                <li>Support for multiple industry-standard connection methods</li>
-                <li>No shared servers, accounts, or third-party infrastructure</li>
-                <li>Designed for testing, validation, and diagnostics of private network setups</li>
+                <li>Client-side protocol implementation testing</li>
+                <li>Custom server endpoint configuration with user-provided credentials</li>
+                <li>Connection parameter validation and diagnostics</li>
+                <li>Protocol performance analysis and benchmarking</li>
+                <li>Encryption key and authentication testing</li>
+                <li>Network tunnel establishment verification</li>
             </ul>
+            
+            <h3>Use Cases for IT Professionals</h3>
+            <ul class="features">
+                <li>Testing secure proxy server configurations before production deployment</li>
+                <li>Validating protocol implementation correctness</li>
+                <li>Diagnosing connection issues in enterprise proxy infrastructure</li>
+                <li>Benchmarking protocol performance under different network conditions</li>
+                <li>Verifying encryption parameters and authentication mechanisms</li>
+            </ul>
+            
             <div class="highlight-box">
-                <strong>Important:</strong> NettyCheck does not provide public servers, shared networks, or managed services. All connection parameters are explicitly defined by the user.
+                <strong>Important:</strong> NettyCheck is a diagnostic client tool only. Users must configure and provide their own server endpoints, encryption keys, and authentication credentials. We do not operate, provide, manage, rent, or sell access to any proxy servers or network infrastructure. All connection parameters are explicitly user-defined for testing purposes.
             </div>
         </div>
         
         <div class="section">
-            <h2>👥 Designed For</h2>
+            <h2>👥 Target Audience</h2>
             <div class="use-cases">
                 <div class="use-case">Network Engineers</div>
                 <div class="use-case">System Administrators</div>
                 <div class="use-case">Security Specialists</div>
-                <div class="use-case">Developers</div>
+                <div class="use-case">Backend Developers</div>
+                <div class="use-case">DevOps Engineers</div>
                 <div class="use-case">IT Consultants</div>
-                <div class="use-case">Advanced Users</div>
             </div>
+            <p class="description" style="margin-top: 20px;">
+                NettyCheck is designed for technical professionals managing their own network infrastructure who require accurate diagnostic and testing tools.
+            </p>
         </div>
         
         <div class="section">
-            <h2>🔒 Privacy By Design</h2>
+            <h2>🔒 Privacy & Security Commitment</h2>
             <ul class="features">
-                <li>Zero data collection</li>
-                <li>No tracking or analytics</li>
-                <li>All processing occurs locally on the device</li>
-                <li>No user accounts or identifiers</li>
-                <li>No data is transmitted to us or stored externally</li>
+                <li>Zero data collection - no analytics, tracking, or telemetry</li>
+                <li>All diagnostic processing occurs locally on your device</li>
+                <li>No user accounts, registration, or personal identifiers required</li>
+                <li>No data transmitted to our servers - we operate no backend infrastructure</li>
+                <li>User-configured credentials and keys never leave your device</li>
+                <li>Open architecture with transparent functionality</li>
             </ul>
             <p class="description" style="margin-top: 20px;">
-                <strong>NettyCheck is a local diagnostic tool.</strong> We do not observe, log, or process user traffic.
+                <strong>NettyCheck is a local diagnostic tool.</strong> We cannot and do not observe, log, or have access to your network traffic, connection parameters, or diagnostic results.
             </p>
         </div>
         
         <div class="section">
             <h2>❓ Frequently Asked Questions</h2>
             
-            <h3>Q: How do I use the VPN feature?</h3>
+            <h3>Q: How do I use the Secure Tunnel feature?</h3>
             <p class="description">
-                <strong>A:</strong> Open the app → Tap "Secure Tunnel" → Tap "Add Server" (+ button) → Configure your own VPN server settings. This feature is designed for connecting to infrastructure you own or manage.
+                <strong>A:</strong> Open the app → Tap "Secure Tunnel" → Tap the "+" button (Add Server) → Select your protocol (Shadowsocks, VLESS, VMESS, or Trojan) → Enter your server address, port, encryption key, and authentication parameters → Save configuration → Toggle connection for testing. This feature is designed for validating secure proxy configurations you manage.
             </p>
             
-            <h3>Q: Does NettyCheck provide VPN servers?</h3>
+            <h3>Q: What protocols are supported in Secure Tunnel?</h3>
             <p class="description">
-                <strong>A:</strong> No. NettyCheck is a diagnostic tool, not a VPN service. You must configure your own server endpoints. We do not provide public servers, shared networks, or managed services.
+                <strong>A:</strong> NettyCheck supports Shadowsocks, VLESS, VMESS, and Trojan protocols. These are industry-standard secure proxy protocols commonly used in enterprise environments for testing network configurations and validating secure connection implementations.
             </p>
             
-            <h3>Q: Is my data private?</h3>
+            <h3>Q: Does NettyCheck provide proxy servers or VPN services?</h3>
             <p class="description">
-                <strong>A:</strong> Yes! NettyCheck follows a strict privacy-first policy with no tracking and no logs. All processing occurs on your device. See our <a href="https://ticketsnotificationstoyou.github.io/NettyCheck/" style="color: #007AFF;">Privacy Policy</a>.
+                <strong>A:</strong> No. NettyCheck is a <strong>diagnostic client application</strong>, not a service provider. You must configure your own server endpoints with appropriate credentials and encryption keys. We do not operate, provide, manage, rent, sell, or have any affiliation with proxy or VPN service providers. All connection endpoints are user-configured for testing purposes only.
             </p>
             
-            <h3>Q: How can I support development?</h3>
+            <h3>Q: Who uses secure proxy protocols?</h3>
             <p class="description">
-                <strong>A:</strong> Tap the info button (ℹ️) in the Secure Tunnel screen → Tap "Support the Project" to access in-app tips.
+                <strong>A:</strong> Network engineers, system administrators, and developers use these protocols to test secure proxy implementations, validate connection parameters, diagnose routing configurations, benchmark protocol performance, and verify encryption settings in controlled enterprise and development environments.
             </p>
             
-            <h3>Q: Who is NettyCheck for?</h3>
+            <h3>Q: Where do I get server credentials?</h3>
             <p class="description">
-                <strong>A:</strong> NettyCheck is designed for IT professionals, network engineers, developers, and advanced users who need accurate network diagnostics and connectivity analysis tools.
+                <strong>A:</strong> Users must deploy and manage their own proxy server infrastructure or have legitimate access credentials to servers they are authorized to test. NettyCheck only provides the client-side testing capability - you are responsible for all server-side infrastructure and authorization.
+            </p>
+            
+            <h3>Q: Is my configuration data private?</h3>
+            <p class="description">
+                <strong>A:</strong> Yes. NettyCheck operates entirely locally on your device with zero data collection. Your server addresses, encryption keys, and connection parameters are stored only on your device and never transmitted to us. We have no backend infrastructure and cannot access your configurations. See our <a href="https://ticketsnotificationstoyou.github.io/NettyCheck/" style="color: #007AFF;">Privacy Policy</a>.
+            </p>
+            
+            <h3>Q: How do other diagnostic tools work?</h3>
+            <p class="description">
+                <strong>A:</strong> All diagnostic tools (Ping Test, DNS Lookup, Speed Test, etc.) operate locally on your device. Simply tap any tool card on the main screen, enter the required parameters (hostname, URL, etc.), and run the test. Results are displayed immediately and stored only on your device.
+            </p>
+            
+            <h3>Q: How can I support the development of NettyCheck?</h3>
+            <p class="description">
+                <strong>A:</strong> Open the app → Tap "Secure Tunnel" → Tap the info button (ℹ️) in the bottom-right corner → Tap "Support the Project" to access optional in-app tip options (Coffee Tip Small/Medium). Your support helps continue development and maintenance.
+            </p>
+            
+            <h3>Q: What are the system requirements?</h3>
+            <p class="description">
+                <strong>A:</strong> NettyCheck requires iOS 15.0 or later. All features work on iPhone and iPad. Some diagnostic tools may require specific network permissions which the app will request when needed.
             </p>
         </div>
         
@@ -378,8 +439,11 @@
             <p><strong>© 2025 NettyCheck by Vladislav. All rights reserved.</strong></p>
             <p style="margin-top: 15px;">
                 <a href="https://ticketsnotificationstoyou.github.io/NettyCheck/">Privacy Policy</a>
-                <a href="mailto:tunnelletter@gmail.com">Contact</a>
+                <a href="mailto:tunnelletter@gmail.com">Email Support</a>
                 <a href="https://web.telegram.org/k/#@nettychecksupport" target="_blank">Telegram Support</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.85em; color: #86868b;">
+                NettyCheck is a diagnostic tool for network professionals. Use responsibly and in compliance with all applicable laws and regulations.
             </p>
         </footer>
     </div>
