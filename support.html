@@ -346,6 +346,7 @@
             <ul class="features">
                 <li>Connect directly to VPN/proxy servers you configure, using your own credentials</li>
                 <li>Custom server endpoint configuration with user-provided encryption keys and authentication</li>
+                <li>Manual split tunneling: route specific IP addresses/CIDR ranges or GeoIP regions through the VPN (proxy), send them direct, or block them — fully configurable by the user</li>
                 <li>No bundled, shared, or third-party servers — NettyCheck does not operate, provide, or sell any VPN service</li>
                 <li>Connection diagnostics and performance monitoring for your VPN connection</li>
                 <li>Useful for validating and testing private VPN/network setups</li>
@@ -406,6 +407,11 @@
             <h3>Q: What protocols are supported?</h3>
             <p class="description">
                 <strong>A:</strong> NettyCheck's VPN client supports Shadowsocks, VLESS, VMESS, and Trojan protocols. These are industry-standard tunneling protocols commonly used for secure VPN connectivity.
+            </p>
+
+            <h3>Q: Can I choose which traffic goes through the VPN?</h3>
+            <p class="description">
+                <strong>A:</strong> Yes. NettyCheck supports manual split tunneling — you can route specific IP addresses or CIDR ranges, or specific GeoIP regions, through the VPN (proxy), send them direct, or block them entirely. This is fully configured by you.
             </p>
             
             <h3>Q: Does NettyCheck provide proxy servers or VPN services?</h3>
